@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#212121">
+
+
+    <Button android:id="@+id/btnRegister"
+        android:layout_width="225dp"
+        android:layout_height="38dp"
+        android:text="Register"
+        android:layout_below="@+id/txtEmail"
+        android:layout_alignLeft="@+id/txtEmail"
+        android:layout_alignStart="@+id/txtEmail"
+        android:layout_marginTop="49dp"
+        android:background="#6539D6"/>
+
+    <EditText
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtName"
+        android:hint="Team Name"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:ellipsize="start"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtEmail"
+        android:hint="Email Id"
+        android:singleLine="true"
+        android:gravity="center_horizontal"
+        android:ellipsize="start"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/txtName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:id="@+id/img"
+        android:scaleType="fitXY"
+        android:src="@drawable/newlogo"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
